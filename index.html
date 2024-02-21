@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Bus Ticket</title>
+</head>
+
+<body>
+    <Header class="max-w-[1180px] mx-auto">
+        <div class="navbar  bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Item 1</a></li>
+                        <li>
+                        <li><a>Item 2</a></li>
+                        </li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">daisyUI</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Item 1</a></li>
+                    <li>
+                        <a>Item 2</a>
+                    </li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn">Button</a>
+            </div>
+        </div>
+    </Header>
+    <main>
+
+        <!--------------------------- Banner ---------------------------->
+
+        <div class="banner max-w-[1180px] mx-auto  rounded-3xl">
+            <div class="hero h-[550px] rounded-3xl"
+                style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+                <div class="hero-overlay bg-opacity-60  rounded-3xl"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="px-32">
+                        <h1 class="mb-5 px-24 text-5xl font-bold">End To End Travel With <br><span
+                                class="text-green-500">P-Paribahan</span></h1>
+                        <p class="mb-5 text-lg font-normal">Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                            assumenda
+                            excepturi exercitationem
+                            quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <button class="btn btn-primary text-black bg-[#1DD100]">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------End of  Banner ---------------------------->
+
+        <!-------------------------- Best Offers --------------------------------->
+
+        <section class="best offers  mt-12 max-w-[1180px] mx-auto ">
+            <h1 class="font-bold text-[40px] text-center">Best Offers For You</h1>
+            <div class="coupons flex justify-between">
+                <div class="coupon1 py-8 px-8 bg-[#FFBF0F] rounded-3xl w-[575px] h-[220px] flex justify-between">
+                    <div class="texts ">
+                        <h1 class="font-bold text-[40px] text-[#030712CC]">15% OFF</h1>
+                        <p class="font-semibold text-[20px] text-[#030712CC] ">on your next purchase</p>
+                        <p class="text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <div class="code">
+                        <p class="font-bold text-[32px]">new <sub>24</sub></p>
+                    </div>
+                </div>
+                <div class="coupon2 bg-[#F78C9C] rounded-3xl w-[575px] h-[220px] flex justify-between">
+                    <div class="texts">
+                        <h1>20% OFF</h1>
+                        <p>on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div class="code">
+                        <p>Coupon 20</p>
+                        <p>Coupon code</p>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </section>
+        <!--------------------------End of Best Offers ---------------------------->
+
+        <!------------------------- Ticketing ------------------------------>
+
+        <section id="ticketing" class="ticketing rounded-3xl bg-[#F7F8F8] mt-12  ">
+            <div class="naming max-w-[1180px] mx-auto text-center">
+                <h1 class="font-bold text-[40px] font-raleway">P.H. P-Paribahan</h1>
+                <p class="font-normal text-[18px]">Yes, you can run unit tests and view the results directly within the
+                    app. The integrated testing features allow for a
+                    streamlined .</p>
+            </div>
+            <div class="details max-w-[1180px] mx-auto bg-white flex   justify-between">
+                <div class="detail p-8 flex flex-col flex-1  justify-between">
+                    <div class="bus-left flex justify-between">
+                        <div class="bus-name flex gap-x-3">
+                            <img class="h-12 w-[69px]" src="images/bus-logo.svg" alt="">
+                            <div class="name font-bold text-[32px] text-[#030712]">GreenLine Paribahan <br> <span
+                                    class="text-[#03071299] font-normal text-lg">Coach-009-WEB ! AC_Business</span></div>
+                        </div>
+                        <div class="ticket-left bg-[#1DD10026] flex gap-x-2">
+                            <img class="w-[28px] h-[28px]" src="images/seat-green.svg" alt="">
+                            <div class="seat-left text-[#1DD100] "><span id="seat-left">15</span> Seat Left</div>
+                        </div>
+                    </div>
+                    <div class="routing font-semibold text-lg flex justify-between">
+                        <div class="route">Route</div>
+                        <div class="where text-[#030712]">Dhaka - Sylhet</div>
+                    </div>
+                    <div class="departure-time font-semibold text-lg  flex justify-between">
+                        <div class="text">Departure-Time</div>
+                        <div class="time text-[#030712]">9:00 PM</div>
+                    </div>
+                    <div class="detination-point font-medium text-base flex justify-between">
+                        <div class="boarding-point bg-[#0307120D] text-[#030712CC]">Boarding Point - Laxmipur</div>
+                        <div class="dropping-point bg-[#0307120D] text-[#030712CC]">Dropping Point - Bogura</div>
+                        <div class="estimated-time bg-[#0307120D] text-[#030712CC]">Est Time - 11 Hours</div>
+                    </div>
+                </div>
+                <div
+                    class="price w-48 p-8 border-dashed border-green-500 border-l-2 flex flex-col justify-center items-center">
+                    <img class="h-6 w-6" src="images/tabler-icon-coin-taka-filled.svg" alt="">
+                    <h2>550 Taka</h2>
+                    <p>Per Seat</p>
+                </div>
+
+
+            </div>
+            <div class="seat-booking flex justify-between  rounded-3xl bg-white max-w-[1180px] mx-auto">
+                <div class="seat-visual flex-1">
+                    <div class="text font-raleway font-semibold text-2xl">Select Your Seat</div>
+                    <div class="icons">
+                        <div class="available"></div>
+                        <div class="selected"></div>
+                    </div>
+                    <div class="stearing">
+                        <div class="empty"></div>
+                        <div class="icons-stearing"></div>
+                    </div>
+                    <div class="seats flex  flex-row">
+                        <div class="col-1 flex gap-y-2 flex-col">
+                            <div class="a font-medium text-lg w-[80px] h-14">A</div>
+                            <div class="b font-medium text-lg w-[80px] h-14">B</div>
+                            <div class="c font-medium text-lg w-[80px] h-14">C</div>
+                            <div class="d font-medium text-lg w-[80px] h-14">D</div>
+                            <div class="e font-medium text-lg w-[80px] h-14">E</div>
+                            
+
+                        </div>
+                        <div class="col-2 mr-3 flex gap-y-2 flex-col" >
+                            <div id="A1" class="a font-medium text-lg text-[#03071280] bg-[#EEEEEE] rounded-xl w-[110px] h-14" onclick="selectingSeatA1()">A1</div>
+                            <div id="B1" class="b font-medium text-lg text-[#03071280] bg-[#EEEEEE] rounded-xl w-[110px] h-14" onclick="selectingSeatB1()">B1</div>
+                            <div id="C1" class="c font-medium text-lg text-[#03071280] bg-[#EEEEEE] rounded-xl w-[110px] h-14" onclick="selectingSeatC1()">C1</div>
+                            
+
+                        </div>
+                        <div class="col-3 mr-3  flex gap-y-2 flex-col">
+                            <div class="a font-medium text-lg text-[#03071280] bg-[#EEEEEE] rounded-xl w-[110px] h-14">A2</div>
+                            <div class="b font-medium text-lg text-[#03071280] bg-[#EEEEEE] rounded-xl w-[110px] h-14">B2</div>
+                            <div class="c font-medium text-lg text-[#03071280] bg-[#EEEEEE] rounded-xl w-[110px] h-14">C2</div>
+                           
+
+                        </div>
+                        <div class="col-4 mr-3 ml-3 flex gap-y-2 flex-col">
+                            <div class="a font-medium text-lg text-[#03071280] bg-[#EEEEEE] rounded-xl w-[110px] h-14">A3</div>
+                            <div class="b font-medium text-lg text-[#03071280] bg-[#EEEEEE] rounded-xl w-[110px] h-14">B3</div>
+                            <div class="c font-medium text-lg text-[#03071280] bg-[#EEEEEE] rounded-xl w-[110px] h-14">C3</div>
+                            
+
+                        </div>
+                        <div class="col-5 flex gap-y-2 flex-col">
+                            <div class="a font-medium text-lg text-[#03071280] bg-[#EEEEEE] rounded-xl w-[110px] h-14">A4</div>
+                            <div class="b font-medium text-lg text-[#03071280] bg-[#EEEEEE] rounded-xl w-[110px] h-14">B4</div>
+                            <div class="c font-medium text-lg text-[#03071280] bg-[#EEEEEE] rounded-xl w-[110px] h-14">C4</div>
+                            
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="seat-calculation border-l-2 border-dashed border-gray-500/95 px-3 py-4 w-[450px]">
+                    <div class="text text font-raleway font-semibold text-2xl">Select Your Seat</div>
+                    <div id="seat-calc" class="seat-calc rounded-xl bg-[#EEEEEE] p-4">
+                        <div class="heading flex justify-between">
+                            <div class="seat font-medium text-base text-[#030712]">Seat <span id="seat-number" class="bg-[#1DD100] text-white rounded-[5px] w-[40px] h-[10px]"> <span class="bg-[#1DD100] text-[#1DD100]">00</span>0</span> </div>
+                            <div class="class font-medium text-base text-[#030712]">Class</div>
+                            <div class="price font-medium text-base text-[#030712]">Price</div>
+                        </div>
+                        <div class="seat-name text-[#03071299] font-inter font-normal text-base flex flex-col">
+                            <div class="seat-details-1 flex justify-between">
+                                <div class="siv">C</div>
+                                <div id="Economy-class" class="siv">Economy Class</div>
+                                <div id="550" class="siv">550</div>
+                            </div>
+                           
+                            <div class="seat-details-2  flex justify-between">
+                                <div id="seat-1" class="siv"></div>
+                                <div id="class-1" class="siv"></div>
+                                <div id="price-1" class="siv"></div>
+                            </div>
+                            <div class="seat-details-3  flex justify-between">
+                                <div id="seat-2" class="siv"></div>
+                                <div id="class-2" class="siv"></div>
+                                <div id="price-2" class="siv"></div>
+                            </div>
+                            <div class="seat-details-4  flex justify-between">
+                                <div id="seat-3" class="seat-3"></div>
+                                <div id="class-3" class="class-3"></div>
+                                <div id="price-3" class="price-3"></div>
+                            </div>
+                           
+                        </div>
+                        <div class="total-price flex justify-between">
+                            <div class="font-medium text-base text-[#030712]">total-price</div>
+                            <div class="font-medium text-base text-[#030712]">BDT 1100</div>
+                        </div>
+                        <div class="coupon">
+                            <input type="text" placeholder="Have You Any Coupon">
+                            <button>Apply</button>
+                        </div>
+                        <div class="grand-total flex justify-between">
+                            <div class="font-medium text-base text-[#030712]">Grand Total</div>
+                            <div class="font-medium text-base text-[#030712]">BDT 1100</div>
+                        </div>
+                    </div>
+                    <div class="input-field"></div>
+                    <button>Next</button>
+                    <div class="terms-conditions"></div>
+                </div>
+            </div>
+        </section>
+        <!-------------------------End of Ticketing ------------------------------>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
