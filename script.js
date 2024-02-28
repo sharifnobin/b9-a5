@@ -226,14 +226,14 @@ function decreaseSeat(elementId) {
 //--------------------------- Coupon Field ----------------------------------------
 
 const buttonId = document.querySelector("#apply");
-console.log(buttonId);
+
 
 buttonId.addEventListener("click", function (event) {
   const coupon = document.querySelector("#coupon");
-  console.log(coupon);
+  
 
   const inputID = document.querySelector(".input-id");
-  console.log(inputID)
+  
 
   const grandTotalId = document.getElementById("grand-total");
 
@@ -246,7 +246,6 @@ buttonId.addEventListener("click", function (event) {
     // buttonId.setAttribute("disabled", true);
     // buttonId.setAttribute("style", "background-color:grey;");
     inputID.setAttribute("style", "display:none;");
-    console.log(inputID);
 
   } else if (couponCode === "couple 20".toUpperCase()) {
     buttonId.setAttribute("disabled", true);
@@ -260,7 +259,7 @@ buttonId.addEventListener("click", function (event) {
 
   //----------------------------- Grand Total -------------------------------------
   
-   grandTotalPrice();
+  //  grandTotalPrice();
 });
 
 //------------------------------ Total Price -------------------------------
@@ -334,7 +333,7 @@ function totalPrice() {
   totalPriceId.innerText = "BDT "+totalPriceCalc;
    grandTotal(totalPriceCalc);
 
-   return totalPriceCalc;
+   grandTotalPrice(totalPriceCalc);
 
   //  grandTotalPrice(totalPriceCalc);
 }
@@ -346,12 +345,14 @@ function grandTotal(totalPriceCalc){
  const grandTotalId = document.getElementById("grand-total");
  
  grandTotalId.innerText ="BDT "+totalPriceCalc;
+
 }
 
 function grandTotalPrice(totalPriceCalc){
 
   const grandTotalId = document.getElementById("grand-total");
   const grandTotalPrice = totalPriceCalc - totalPriceCalc * 0.15;
+  console.log(grandTotalPrice);
 
   grandTotalId.classList.add("font-bold");
   grandTotalId.classList.add("text-[#27AE60]");
