@@ -185,8 +185,10 @@ function increaseSeat(elementId) {
   let seatInteger = parseInt(seatNumber);
   seatInteger = seatInteger + 1;
   document.getElementById(elementId).innerText = seatInteger;
-  console.log(seatInteger);
   if (seatInteger >= 4) {
+
+   
+
     document.getElementById("A1").setAttribute("disabled", true);
     document.getElementById("B1").setAttribute("disabled", true);
     document.getElementById("C1").setAttribute("disabled", true);
@@ -202,6 +204,11 @@ function increaseSeat(elementId) {
     document.getElementById("A4").setAttribute("disabled", true);
     document.getElementById("B4").setAttribute("disabled", true);
     document.getElementById("C4").setAttribute("disabled", true);
+
+     const applyID = document.getElementById('apply'); 
+    applyID.setAttribute("enable", true);
+    console.log(applyID)
+    applyID.setAttribute('style', 'background-color : #1DD100;');
 
   }
 
@@ -225,19 +232,35 @@ buttonId.addEventListener("click", function (event) {
   const coupon = document.querySelector("#coupon");
   console.log(coupon);
 
+  const inputID = document.querySelector(".input-id");
+  console.log(inputID)
+
+  const grandTotalId = document.getElementById("grand-total");
+
+
   const couponCode = coupon.value.toUpperCase();
 
   const new15 = "new15".toUpperCase();
 
   if (couponCode === new15) {
-    buttonId.setAttribute("disabled", true);
-    buttonId.setAttribute("style", "background-color:grey;");
+    // buttonId.setAttribute("disabled", true);
+    // buttonId.setAttribute("style", "background-color:grey;");
+    inputID.setAttribute("style", "display:none;");
+    console.log(inputID);
+
   } else if (couponCode === "couple 20".toUpperCase()) {
     buttonId.setAttribute("disabled", true);
     buttonId.setAttribute("style", "background-color:grey;");
+
+     inputID.setAttribute("style", "display:none;");
   } else {
     alert("Try With A Valid Coupon !");
   }
+
+
+  //----------------------------- Grand Total -------------------------------------
+  
+   grandTotalPrice();
 });
 
 //------------------------------ Total Price -------------------------------
@@ -310,6 +333,10 @@ function totalPrice() {
  
   totalPriceId.innerText = "BDT "+totalPriceCalc;
    grandTotal(totalPriceCalc);
+
+   return totalPriceCalc;
+
+  //  grandTotalPrice(totalPriceCalc);
 }
 
 //------------------------------Grand Total  -------------------------------
@@ -319,6 +346,17 @@ function grandTotal(totalPriceCalc){
  const grandTotalId = document.getElementById("grand-total");
  
  grandTotalId.innerText ="BDT "+totalPriceCalc;
+}
+
+function grandTotalPrice(totalPriceCalc){
+
+  const grandTotalId = document.getElementById("grand-total");
+  const grandTotalPrice = totalPriceCalc - totalPriceCalc * 0.15;
+
+  grandTotalId.classList.add("font-bold");
+  grandTotalId.classList.add("text-[#27AE60]");
+  
+   grandTotalId.innerText ="BDT"+  grandTotalPrice;
 }
 
 //---------------------- Removing Class -----------------------------------------------

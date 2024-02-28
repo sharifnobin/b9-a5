@@ -45,7 +45,11 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn">Button</a>
+               <div class="flex rounded-xl h-9 w-32 justify-center items-center bg-[#1DD1001A] gap-x-2">
+                    <p class="font-raleway text-[20px] font-bold text-[#1DD100]">Bus</p>
+                    <img class="h-6 w-6 " src="images/bus-icon.svg" alt="">
+                </div>
+                <!-- <a class="btn">Button</a> -->
             </div>
         </div>
     </Header>
@@ -216,7 +220,7 @@
                 <div class="seat-calculation px-8 border-l-2 border-dashed border-gray-500/95  w-[450px]">
                     <div class="text text font-raleway font-semibold text-2xl pb-6  border-b-2 border-dashed border-gray-300">Select Your Seat</div>
                     <div id="seat-calc" class="seat-calc  rounded-xl mt-4 bg-[#EEEEEE] p-4">
-                        <div class="heading border-b-2 border-dashed border-gray-400 pb-3 flex justify-between">
+                        <div class="heading border-b-2 border-dashed border-gray-300 pb-3 flex justify-between">
                             <div class="seat font-inter font-medium text-base text-[#030712]">Seat <span id="seat-number" class="bg-[#1DD100] text-white rounded-[5px] w-[40px] h-[10px]"> 0</span> </div>
                             <!-- <span class="bg-[#1DD100] text-[#1DD100]">00</span> -->
                             <div class="class font-inter font-medium text-base text-[#030712]">Class</div>
@@ -291,15 +295,15 @@
                             </div>
                            
                         </div>
-                        <div class="total-price pt-1 border-t-2 border-solid border-gray-400 flex justify-between">
-                            <div class="font-medium font-inter text-base text-[#030712]">total-price</div>
+                        <div class="total-price pt-1 border-t-2 border-solid border-gray-300 flex justify-between">
+                            <div class="font-medium font-inter text-base text-[#030712]">Total Price</div>
                             <div id="total-price" class="font-inter font-medium text-base text-[#030712]">BDT 000</div>
                         </div>
                         <div class="coupon">
-                            <label class="input my-5 input-bordered flex items-center gap-2">
-                                <input id="coupon" type="text" class="grow " placeholder="Have Any Coupon ?" />
-                                <button id="apply"
-                                    class=" font-inter w-[80px] h-[40px] font-semibold text-base rounded-lg text-white bg-[#1DD100]">Apply</button>
+                            <label class="input input-id my-5 input-bordered flex items-center gap-2">
+                                <input id="coupon" type="text" class="grow  " placeholder="Have Any Coupon ?" />
+                                <button id="apply" type="submit"
+                                    class=" font-inter w-[80px] h-[40px] font-semibold text-base rounded-lg text-white bg-gray-500" >Apply</button>
                             </label>
                             <!-- <input id="coupon" type="text" placeholder="Have You Any Coupon">
                             <button id="apply" class=" font-inter w-[80px] h-[40px] font-semibold text-base rounded-lg text-white bg-[#1DD100]" >Apply</button> -->
